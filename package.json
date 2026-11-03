@@ -1,0 +1,45 @@
+{
+  "name": "dsh-add-to-chat",
+  "version": "1.0.0",
+  "description": "Right-click any selected assistant reply and add it to the composer as a removable quote chip; the selected text is delivered to the model as hidden context. · 选中我回复里的一段文字右键「加入对话」，以可移除的引用胶囊放进输入框，发送时把原文作为隐藏上下文交给我。",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "quote",
+    "selection",
+    "composer",
+    "chat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoenghao-gif/dsh-add-to-chat.git"
+  },
+  "homepage": "https://github.com/zoenghao-gif/dsh-add-to-chat",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

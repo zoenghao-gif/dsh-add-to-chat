@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Add to Conversation",
+    "description": "Right-click a text selection to add it as a collapsible quote chip; the selected text is delivered to the model with your next message."
+  }
+}
