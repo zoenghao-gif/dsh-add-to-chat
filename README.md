@@ -2,6 +2,8 @@
 
 选中我（助手）回复里的一段文字，右键「**加入对话**」，这段原文会以可移除的引用胶囊出现在输入框里；发送后原文作为**隐藏上下文**交付给模型，你的消息气泡里只显示你自己打的字。
 
+![选中一段回复后，胶囊出现在输入框内](https://raw.githubusercontent.com/zoenghao-gif/dsh-add-to-chat/main/assets/preview.png)
+
 ## 用法
 
 1. 在任意一条助手回复里选中一段文字。
